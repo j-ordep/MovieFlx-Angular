@@ -1,59 +1,84 @@
-# Movieflx
+# MovieFlix
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
+MovieFlix é um projeto estilo **clone da Netflix**, desenvolvido em Angular. Ele oferece uma interface moderna para **login, cadastro e visualização de filmes**, com componentes bem organizados entre usuários autenticados (**Logged**) e não autenticados (**NotLogged**).
 
-## Development server
+### Tecnologias Usadas
+- Angular 15+
+- Angular CLI 19.2.6
+- TypeScript
+- HTML/CSS
+- Componentização
 
-To start a local development server, run:
 
-```bash
-ng serve
+## Estrutura do Projeto
+
+src/
+├── app/
+│   ├── components/
+│   │   ├── logged/
+│   │   │   ├── card/
+│   │   │   ├── create-movie-modal/
+│   │   │   └── header/
+│   │   └── not-logged/
+│   │       ├── header/
+│   │       ├── sign-in/
+│   │       └── sign-up/
+│   └── pages/
+│       ├── logged/
+│       │   └── home/
+│       └── not-logged/
+│           ├── home/          # Página de Login
+│           └── registration/  # Página de Cadastro
+
+
+## Funcionalidades
+
+### NotLogged
+
+- `Home`: página de login.
+- `Registration`: página de cadastro.
+- Componentes auxiliares:
+  - `SignIn`
+  - `SignUp`
+  - `Header`
+
+### Logged
+
+- `Home`: onde os filmes aparecem.
+- Componentes:
+  - `Card`: exibe o filme.
+  - `CreateMovieModal`: modal para adicionar novos filmes.
+  - `Header`: barra de navegação presente em todas as páginas.
+
+## Como rodar o projeto
+
+### 1. Clonar o repositório
+
+```
+git clone https://github.com/seu-usuario/movieflix.git
+cd movieflix
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+# 2. Instalar as dependências
+`npm install`
 
-## Code scaffolding
+# 3. Iniciar o servidor de desenvolvimento
+`ng serve`
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+# Acesse no navegador:
+# http://localhost:4200/
+# A aplicação será recarregada automaticamente sempre que você salvar alguma alteração nos arquivos fonte.
 
-```bash
-ng generate component component-name
-```
+# Comandos Úteis do Angular CLI
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+# Criar novo componente
+`ng generate component nome-do-componente`
 
-```bash
-ng generate --help
-```
+# Ver todos os comandos disponíveis
+`ng generate --help`
 
-## Building
+# Compilar o projeto
+`ng build`
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+# Rodar testes unitários
+`ng test`
