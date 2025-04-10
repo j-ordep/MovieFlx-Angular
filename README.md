@@ -66,9 +66,8 @@ cd movieflix
 ### 3. Iniciar o servidor de desenvolvimento
 `ng serve`
 
-#### Acesse no navegador:
+### Acesse no navegador:
 #### http://localhost:4200/
-#### A aplicação será recarregada automaticamente sempre que você salvar alguma alteração nos arquivos fonte.
 
 ### Comandos Úteis do Angular CLI
 
