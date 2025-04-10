@@ -11,7 +11,7 @@ MovieFlix é um projeto estilo **clone da Netflix**, desenvolvido em Angular. El
 
 
 ## Estrutura do Projeto
-
+ ```
 src/
 ├── app/
 │   ├── components/
@@ -29,8 +29,7 @@ src/
 │       └── not-logged/
 │           ├── home/          # Página de Login
 │           └── registration/  # Página de Cadastro
-
-
+```
 ## Funcionalidades
 
 ### NotLogged
