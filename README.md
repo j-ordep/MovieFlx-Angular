@@ -2,7 +2,7 @@
 
 MovieFlix é um projeto estilo **clone da Netflix**, desenvolvido em Angular. Ele oferece uma interface moderna para **login, cadastro e visualização de filmes**, com componentes bem organizados entre usuários autenticados (**Logged**) e não autenticados (**NotLogged**).
 
-### Tecnologias Usadas
+## Tecnologias Usadas
 - Angular 15+
 - Angular CLI 19.2.6
 - TypeScript
@@ -30,6 +30,7 @@ src/
 │           ├── home/          # Página de Login
 │           └── registration/  # Página de Cadastro
 ```
+
 ## Funcionalidades
 
 ### NotLogged
@@ -49,6 +50,7 @@ src/
   - `CreateMovieModal`: modal para adicionar novos filmes.
   - `Header`: barra de navegação presente em todas as páginas.
 
+
 ## Como rodar o projeto
 
 ### 1. Clonar o repositório
@@ -58,26 +60,23 @@ git clone https://github.com/seu-usuario/movieflix.git
 cd movieflix
 ```
 
-# 2. Instalar as dependências
+### 2. Instalar as dependências
 `npm install`
 
-# 3. Iniciar o servidor de desenvolvimento
+### 3. Iniciar o servidor de desenvolvimento
 `ng serve`
 
-# Acesse no navegador:
-# http://localhost:4200/
-# A aplicação será recarregada automaticamente sempre que você salvar alguma alteração nos arquivos fonte.
+#### Acesse no navegador:
+#### http://localhost:4200/
+#### A aplicação será recarregada automaticamente sempre que você salvar alguma alteração nos arquivos fonte.
 
-# Comandos Úteis do Angular CLI
+### Comandos Úteis do Angular CLI
 
-# Criar novo componente
+#### Criar novo componente
 `ng generate component nome-do-componente`
 
-# Ver todos os comandos disponíveis
+#### Ver todos os comandos disponíveis
 `ng generate --help`
 
-# Compilar o projeto
+#### Compilar o projeto
 `ng build`
-
-# Rodar testes unitários
-`ng test`
